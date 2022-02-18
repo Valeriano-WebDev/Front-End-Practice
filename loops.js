@@ -75,14 +75,15 @@ for (let i = 0; i < 16; i++ ){
 // the word buzz. If a number is a multiple of both 3 and 5, replace it with fizzbuzz.Expected output --> 1, 2, "fizz", 4,
 // "buzz", "fizz", 7, 8, "fizz", "buzz", 11, "fizz", 13, 14, "fizzbuzz" ...etc
 
+
 for (var i = 1; i < 101; i++ ) {
     if (i % 15 === 0) {
-        console.log("fiz")
+        console.log("fizzbuzz")
     } else if (i % 3 === 0) {
-        console.log("buzz")
+        console.log("fiz")
     } else if (i % 5 === 0) {
         {
-            console.log("fizzbuzz")
+            console.log("buzz")
         }
     } else {
         {
@@ -90,5 +91,4 @@ for (var i = 1; i < 101; i++ ) {
         }
     }
 }
-
 

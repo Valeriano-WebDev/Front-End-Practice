@@ -1,17 +1,16 @@
 //Challenge #1 Logging values with for loops
 // Write a for loop that logs each number from 1 - 20.
-// Write a for loop that logs the result of each number from 1 - 20 tripled.
-// Create a for loop that logs each even number from 1-20, and in the place of every odd number,
-// returns the word "ODD" Expected output --> ODD, 2, ODD, 4, ODD, 6 ...etc
-
 for (let i = 1; i < 21; i++) {
     console.log(i)
 }
 
+// Write a for loop that logs the result of each number from 1 - 20 tripled.
 for (let i = 1; i < 21; i++) {
     console.log(i * 3)
 }
 
+// Create a for loop that logs each even number from 1-20, and in the place of every odd number,
+// returns the word "ODD" Expected output --> ODD, 2, ODD, 4, ODD, 6 ...etc
 for (let i = 1; i < 21; i++) {
     if (i % 2 === 1 ) {
         console.log ("odd")
@@ -36,6 +35,8 @@ for(let i=0; i<nums.length; i++){
     }
 }
     console.log(highestNumber)
+
+
 
 // Create a loop that will log the lowest number from the array Expected output --> -9
 let lowestNumber;
@@ -75,11 +76,11 @@ for (let i = 0; i < 16; i++ ){
 // "buzz", "fizz", 7, 8, "fizz", "buzz", 11, "fizz", 13, 14, "fizzbuzz" ...etc
 
 for (var i = 1; i < 101; i++ ) {
-    if (i % 15 == 0) {
+    if (i % 15 === 0) {
         console.log("fiz")
-    } else if (i % 3 == 0) {
+    } else if (i % 3 === 0) {
         console.log("buzz")
-    } else if (i % 5 == 0) {
+    } else if (i % 5 === 0) {
         {
             console.log("fizzbuzz")
         }
@@ -91,4 +92,3 @@ for (var i = 1; i < 101; i++ ) {
 }
 
 
-//

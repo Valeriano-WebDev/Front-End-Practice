@@ -74,20 +74,23 @@ console.log(charsReversed.join(''))
 
 
 // Create two arrays consisting of three first names of your cohort members in each.
-let array1 = ["Leonardo", "Donatello", "Raphael"]
-let array2 = ["john", "jacob", "jingle"]
+let cohort1 = ["Leonardo", "Donatello", "Raphael"]
+let cohort2 = ["John", "Jacob", "Jingle"]
+
+// Must have Capital names otherwise will not sort correctlly.
 
 // 16. Write the code that sorts the names in alphabetical order.
-console.log(array1.sort())
-console.log(array2.sort())
+console.log(cohort1.sort())
+console.log(cohort2.sort())
 
 //17. Write the code that sorts the names in reverse alphabetical order.
-console.log(array1.sort().reverse())
-console.log(array2.sort().reverse())
+console.log(cohort1.reverse())
+console.log(cohort2.reverse())
 
 //18. Write the code that sorts all the names in alphabetical order in a single array.
-let array3 = array1.concat(array2).sort()
-console.log(array3)
+let combinedCohort = cohort1.concat(cohort2).sort()
+console.log(combinedCohort)
+
 
 //---------------------------------------------------------------->
 
@@ -96,8 +99,10 @@ let oddIndexes = []
 
 
 //19. Write the code that logs the values from the numbers array that are at odd indexes
-// var oddNumbers  = numbers.filter((a, b) => {
-//     return b % 2 === )}
+var oddNumbers = numbers.filter((a, b) => {
+    return b % 2 === 1}
+)
 
 //20. Write the code that adds the values from odd indexes into the oddIndexes array.
 
+console.log(oddIndexes.concat(oddNumbers));

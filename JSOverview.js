@@ -50,11 +50,33 @@ var addThese2 = []
 // --> 0
 
 
-const sumOf = (arr) => arr.reduce((a,b) => a + b, 0)
+// const sumOf = (arr) => arr.reduce((a,b) => a + b, 0)
 
+
+const sumOf = (arr) => {
+    let sum = 0
+    for(let i = 0; i < arr.length; i++) {
+        sum += arr[i]
+}
+    return sum
+
+}
 console.log(sumOf(addThese1))
 console.log(sumOf(addThese2))
 
-
+//
 //https://www.codegrepper.com/code-examples/javascript/add+all+elements+in+array+javascript
+
 //Challenge #5 Create a function that takes in an array of numbers and returns the index of the largest number.
+var indexHighestNumber = [1, 4, 2, 3]
+// --> 1
+
+const findHighest = (arr) => {
+    let max = Math.max(...arr)
+    return arr.indexOf(max)
+}
+console.log(findHighest(indexHighestNumber))
+//Using only Math.max use the spread operator (...) or . apply for the array which takes in all remaining arguments.
+//Use only one or the other.
+
+

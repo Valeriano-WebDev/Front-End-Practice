@@ -80,3 +80,19 @@ console.log(findHighest(indexHighestNumber))
 //Use only one or the other.
 
 
+var arr1 = [3, 7, 10, 5, 4, 3, 3]
+var arr2 = [7, 8, 2, 3, 1, 5, 4]
+// --> [3, 7, 10, 5, 4, 8, 2, 1]
+
+
+
+
+const noDuplicates = (value1, value2) => {
+    let concatArray = value1.concat(value2)
+    let filterArray = concatArray.filter((value, index) => {
+        return concatArray.indexOf(value) === index
+
+    })
+    return filterArray
+}
+console.log(noDuplicates(arr1, arr2))
